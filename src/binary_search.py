@@ -20,4 +20,5 @@ def binary_search(array: MyArray, target: int) -> int:
             esquerda_array = meio + 1
         else:
              direita_array = meio - 1
-            
+
+    return -1
