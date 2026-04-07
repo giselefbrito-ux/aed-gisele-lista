@@ -8,9 +8,9 @@ def binary_search(array: MyArray, target: int) -> int:
     Deve retornar o índice do elemento ou -1 caso não encontrado.
     """
     esquerda_array = 0
-    direita_array = -1
+    direita_array = len(array) -1
 
-    while esquerda_array <= direita array:
+    while esquerda_array <= direita_array:
         meio =  (esquerda_array + direita_array) // 2
         value = array.get(mid)
 
@@ -19,6 +19,6 @@ def binary_search(array: MyArray, target: int) -> int:
         elif value < target:
             esquerda_array = meio + 1
         else:
-             direita_array = meio - 1
+            direita_array = meio - 1
 
     return -1
