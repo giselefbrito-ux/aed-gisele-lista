@@ -8,4 +8,9 @@ def linear_search(array: MyArray, target: int) -> int:
     Deve retornar o índice da primeira ocorrência do valor,
     ou -1 caso o valor não esteja presente.
     """
-    raise NotImplementedError
+    for i in range(len(array)):
+        if array.get(i) == target:
+            return i 
+    
+    return -1
+    
