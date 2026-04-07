@@ -25,6 +25,9 @@ class MyArray(Array):
         self.data.remove(value)
 
     def insert(self, index: int, value: int) -> None:
+        if index < 0 or index > len(self.data):
+            raise IndexError("Índice inválido")
+        
         self.data.insert(index, value)
 
     def __len__(self) -> int:
