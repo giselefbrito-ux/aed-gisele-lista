@@ -12,7 +12,7 @@ def binary_search(array: MyArray, target: int) -> int:
 
     while esquerda_array <= direita_array:
         meio =  (esquerda_array + direita_array) // 2
-        value = array.get(mid)
+        value = array.get(meio)
 
         if value == target:
             return meio
