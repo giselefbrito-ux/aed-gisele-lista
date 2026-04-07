@@ -20,7 +20,7 @@ class MyArray(Array):
 
     def remove(self, value: int) -> None:
         if value not in self.data:
-            raise Valueerror("Valor não encontrado")
+            raise ValueError("Valor inválido")
     
         self.data.remove(value)
 
