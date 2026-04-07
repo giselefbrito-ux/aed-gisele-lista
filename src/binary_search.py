@@ -11,7 +11,7 @@ def binary_search(array: MyArray, target: int) -> int:
     direita_array = -1
 
     while esquerda_array <= direita array:
-        meio =  esquerda_array+direita_array // 2
+        meio =  (esquerda_array + direita_array) // 2
         value = array.get(mid)
 
         if value == target:
