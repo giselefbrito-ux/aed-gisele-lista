@@ -19,8 +19,8 @@ class MyArray(Array):
         self.data[index] = value
 
     def remove(self, value: int) -> None:
-        if index < 0 or index > len(self.data):
-            raise IndexError("Índice inválido")
+        if value not in self.data:
+            raise Valueerror("Valor não encontrado")
     
         self.data.remove(value)
 
